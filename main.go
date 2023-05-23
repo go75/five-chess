@@ -365,27 +365,6 @@ func main() {
     r.GET("/", func(ctx *gin.Context) {
         ctx.HTML(200, "index.html", nil)
     })
-    //不是真实服务器
-
-    // 代理
-    // 隐藏服务器地址
-    // 信息验证
-    // 中间件
-
-
-    // 请求合法, 就交给服务器
-
-
-    
-
-    // 多个节点
-
-
-
-    // 反向代理
-    //                 ->        Server
-    // C   ->   Proxy  ->        Server
-    //                 ->        Server
 
 	r.Run(":8888")
 }
